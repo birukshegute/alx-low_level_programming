@@ -1,4 +1,6 @@
 #include "main.h"
+/*ALX Assignment 0x02.*/
+/* C - Functions, nested loops*/
 int main(void)
 {
 _putchar('_');
