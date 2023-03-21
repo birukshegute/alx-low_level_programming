@@ -1,8 +1,9 @@
 #include "main.h"
-/*
-*ALX Assignment 0x02.
-*C - Functions, nested loops
-*/
+/**
+ * main - print _putchar
+  * is written by bk
+ * Return: 0
+ */
 int main(void)
 {
 _putchar('_');
