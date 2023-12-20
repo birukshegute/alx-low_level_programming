@@ -3,8 +3,10 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 
-all: $(OBJ)
-	$(CC) $(OBJ) -o school
-	chmod u+x school
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+	chmod u+x $(NAME)
 $(OBJ): $(SRC)
 	$(CC) -c $(SRC)
