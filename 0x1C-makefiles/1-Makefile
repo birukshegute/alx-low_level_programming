@@ -1,9 +1,10 @@
+CC = gcc
+SRC = *.c
+
 all: school
 
-school: main.o school.o
-	gcc main.c school.c -o school
+school: *.o
+	$(CC) *.c 
 	chmod u+x school
-main.o: main.c
-	gcc -c main.c
-school.o: main.c
-	gcc -c school.c
+*.o: *.c
+	$(CC) -c *.c
