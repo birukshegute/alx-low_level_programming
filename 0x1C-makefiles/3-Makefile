@@ -15,6 +15,6 @@ oclean: $(OBJ)
 	$(RM) $(OBJ)
 fclean: *~ *.swp $(NAME) $(OBJ)
 	$(RM) *~ *.swp $(NAME) $(OBJ)
-re: $(OBJ)
-	fclean
-	all
+re: $(NAME)
+	fclean *~ *.swp $(NAME) $(OBJ)
+	all $(NAME)
