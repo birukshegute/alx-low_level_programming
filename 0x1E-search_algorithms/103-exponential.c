@@ -23,22 +23,22 @@ int exponential_search(int *array, size_t size, int value)
 	i = 1;
 	
 	m = pow(2,i);
-	
+
 	if (array == NULL)
 		return (-1);
 	if (array[0] == value)
 		return (0);
 	while (array[m] <= value && m < n) 
 	{
-		printf("Value checked array[%d] = [%d]\n", m, array[m]);
 		i++;
 		m = pow(2,i);
 
+		printf("Value checked array[%d] = [%d]\n", m, array[m]);
 		print_array(array, low, high);
 		while (low <= high) 
 		{
 			mid = (low + high) / 2;
-			
+
 			if (array[mid] == value)
 			{
 				printf("Value found between indexes [%d] and [%d]\n", low, high);
